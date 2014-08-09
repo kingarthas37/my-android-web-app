@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>登录</title>
+<link href="images/m.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="login">
+  
+  <!-- header -->
+  <header  class="cf">
+	<div class="back"><a href="javascript:void(0)"></a></div>
+    <div class="text">我的账户 - 用户登录</div>
+  </header>
+  <!-- header -->
+    
+  <!-- login container -->
+  <section>
+  
+     <p>用户登录后可下载最新测试题、分享好友可查看好友测试答案等功能。</p>
+      
+     <!-- no login -->
+     <div class="no-login-panel hide">
+     <div class="field">
+        <h4>输入您的手机号或邮箱：</h4> 
+         <div class="text">
+          <input id="text-passport"  type="text" class="check-input text-tpl" title="手机号或邮箱" />
+         </div>
+         <h4>输入您的密码：<span>（密码长度6-20位）</span></h4>
+         <div class="text">
+          <input id="text-pwd"  type="password" class="check-input text-tpl" title="密码"/>
+         </div>
+     </div>
+     
+     <div class="btn">
+       <input type="button" id="btn-login" class="btn-tpl" value="立即登录"/>
+       <a id="lnk-reg" class="lnk" href="javascript:void(0)">新用户注册</a>
+      </div>
+     </div>
+     <!-- no login -->
+     
+     <!-- login -->
+     <div class="login-panel hide">
+        <p>您好，<span id="user"></span></p>
+        <div class="btn">
+          <input type="button" id="btn-unlogin" class="btn-tpl" value="注销退出"/>
+        </div>
+        
+     </div>
+     <!-- login -->
+     
+  </section>
+  <!-- login container -->
+  
+  
+ 
+  
+  <!-- feedback -->
+  <section class="feedback cf">
+     <input type="text" id="fbk-input" class="text-tpl" value="输入您的意见及建议" /><input type="button" id="fbk-submit" value="提交" />
+  </section>
+  <!-- feedback -->
+  
+<script src="js/com/cordova.js"></script>
+<script src="js/com/jquery.js"></script>
+<script src="js/plugins/check/fd.checkvalue.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/src/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>统计结果</title>
+<link href="js/plugins/fdchart/images/fdchart.css" rel="stylesheet" type="text/css" />
+<link href="images/m.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="count">
+  
+  <!-- header -->
+  <header  class="cf">
+	<div class="back"><a href="javascript:void(0)"></a></div>
+    <div class="text">统计结果</div>
+    <div class="share"><a href="javascript:void(0)"></a></div>
+  </header>
+  <!-- header -->
+    
+    
+  <!-- count container -->
+  <section>
+     
+      <div class="chart-container">
+       <div id="chart-pie" class="fd-chart"></div>
+      </div>
+     
+     <p class="count-info">提示：手移至色块可查看详细结果，共有<span class="person-count"></span>人参与</p>
+     
+     <div class="btn">
+       <input type="button" value="重新测试" class="btn-restart btn-tpl" />
+       <input type="button" value="返回" class="btn-back btn-tpl sub" />
+     </div>
+      
+  </section>
+  <!-- count container -->
+ 
+  
+  <!-- feedback -->
+  <section class="feedback cf">
+     <input type="text" id="fbk-input" class="text-tpl" value="输入您的意见及建议" /><input type="button" id="fbk-submit" value="提交" />
+  </section>
+  <!-- feedback -->
+  
+<script src="js/com/cordova.js"></script>
+<script src="js/com/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/plugins/fdchart/src/kinetic-v3.9.8.js"></script>
+<script src="js/plugins/fdchart/main.js"></script>
+<script src="js/src/count.js"></script>
+</body>
+</html>

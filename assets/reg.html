@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>注册</title>
+<link href="images/m.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="reg">
+  
+  <!-- header -->
+  <header  class="cf">
+	<div class="back"><a href="javascript:void(0)"></a></div>
+    <div class="text">我的账户 - 新用户注册</div>
+  </header>
+  <!-- header -->
+    
+  <!-- reg container -->
+  <section>
+  
+     <p>注册用户可下载最新测试题、分享好友可查看好友测试答案等功能。</p>
+
+     <ul class="tab-toggle cf user-type">
+       <li><a class="active" href="javascript:void(0)">手机注册</a></li>
+       <li><a href="javascript:void(0)">邮箱注册</a></li>
+     </ul>
+      
+     <div class="field">
+        <h4 class="label-phone">输入您的手机号：</h4>
+        <h4 class="label-email">输入您的邮箱：</h4>
+        <div class="text">
+          <input id="text-phone"  type="text" class="check-input text-tpl" texttype="phone"  textrequired="true" title="手机号" />
+          <input id="text-email"  type="text" class="text-tpl" texttype="email"  textrequired="true" title="邮箱" />
+         </div>
+         
+         <h4>输入您的密码：<span>（密码长度6-20位）</span></h4>
+         <div class="text">
+          <input id="text-pwd"  type="password" class="check-input text-tpl" texttype="password" textminlen="6" textmaxlen="20" textrequired="true" title="密码" />
+         </div>
+     </div>
+     
+     <div class="btn">
+       <input type="button" id="btn-reg" class="btn-tpl" value="马上注册"/>
+       <a id="lnk-login" class="lnk" href="javascript:void(0)">已有账号，立即登录</a>
+     </div>
+      
+     
+  </section>
+  <!-- reg container -->
+ 
+  
+ 
+  
+  <!-- feedback -->
+  <section class="feedback cf">
+     <input type="text" id="fbk-input" class="text-tpl" value="输入您的意见及建议" /><input type="button" id="fbk-submit" value="提交" />
+  </section>
+  <!-- feedback -->
+  
+<script src="js/com/cordova.js"></script>
+<script src="js/com/jquery.js"></script>
+<script src="js/plugins/check/fd.checkvalue.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/src/reg.js"></script>
+
+</body>
+</html>

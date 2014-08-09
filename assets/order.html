@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>订阅</title>
+<link href="images/m.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="order">
+  
+  <!-- header -->
+  <header  class="cf">
+	<div class="back"><a href="javascript:void(0)"></a></div>
+    <div class="text">订阅服务</div>
+  </header>
+  <!-- header -->
+    
+  <!-- order container -->
+  <section>
+     
+     <p>请输入您的手机号参与我们的订阅内容，我们每期会将最热门、适合您的测试题发送于您。（订阅服务完全免费）</p>
+     
+     <!-- no reg-->
+     <div class="no-reg-panel hide">
+     
+     <div class="field">
+        <h4>输入您的手机号：</h4>
+        <div class="text">
+          <input id="text-order"  type="text" class="check-input text-tpl" texttype="phone"  textrequired="true" title="手机号" />
+        </div>
+     </div>
+     
+     <div class="btn">
+       <input type="button" id="btn-order" class="btn-tpl" value="立即订阅"/>
+     </div>
+     
+     </div>
+      <!-- no reg-->
+      
+      <!-- reg-->
+      <div class="reg-panel hide">
+        
+        <div class="field">
+        <div>您已订阅成功！我们将以短信的形式提示您测试题更新信息。</div><br/>
+        <div class="text">
+          订阅号码：<span id="order-num"></span>
+        </div>
+       </div>
+     
+       <div class="btn">
+         <input type="button" id="btn-order-cancel" class="btn-tpl" value="取消订阅"/>
+       </div>
+      <!-- reg-->
+      
+      </div>
+      
+  </section>
+  <!-- order container -->
+ 
+  
+   <!-- footer nav -->
+  <section class="footer-nav cf">
+       <a href="javascript:void(0)">测试题</a>
+       <a href="javascript:void(0)">下载</a>
+       <a href="javascript:void(0)" class="cur">订阅</a>
+       <a href="javascript:void(0)">我的账户</a>
+  </section>
+  <!-- footer nav -->
+  
+  <!-- feedback -->
+  <section class="feedback cf">
+     <input type="text" id="fbk-input" class="text-tpl" value="输入您的意见及建议" /><input type="button" id="fbk-submit" value="提交" />
+  </section>
+  <!-- feedback -->
+  
+<script src="js/com/cordova.js"></script>
+<script src="js/com/jquery.js"></script>
+<script src="js/plugins/check/fd.checkvalue.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/src/order.js"></script>
+
+</body>
+</html>
